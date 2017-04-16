@@ -13,6 +13,11 @@ import * as cookieParser from 'cookie-parser';
 import * as morgan from 'morgan';
 import * as compression from 'compression';
 
+// Mongoose
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/logrosApp');
+
 // Angular 2
 import { enableProdMode } from '@angular/core';
 // Angular 2 Universal
